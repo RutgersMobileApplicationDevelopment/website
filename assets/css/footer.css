@@ -1,0 +1,43 @@
+.customFooter {
+  background-color: #3A3C40;
+}
+
+#bootstrap-overrides .customFooter {
+  color: #707170;
+}
+
+.customFooter {
+  text-align: center;
+}
+
+.customFooter .footerDetail {
+  text-align: left;
+}
+
+/* #footerNav li {
+  margin: 5px;
+  color: white;
+} */
+
+#bootstrap-overrides .customFooter li a {
+  color: white;
+}
+
+#bootstrap-overrides .customFooter li .active {
+  color: #A25050;
+}
+#footerNav li .nav-link{
+  color: white;
+}
+
+/* small devices */
+@media (max-width: 768px) {
+  .customFooter .footerDetail {
+    text-align: center;
+  }
+
+  .customFooter .footerSocial {
+    margin-top: 16px;
+  }
+
+}

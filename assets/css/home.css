@@ -1,5 +1,5 @@
 .jumbotron {
-  background-image: url("assets/images/bg.png");
+  background-image: url("../images/bg.png");
   text-align: center;
   height: 50vh;
 }
@@ -22,10 +22,11 @@
   right: 0;
   z-index: -1;
 }
+
 .customSection {
   /* height: 300px; */
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
 .section1 {
@@ -39,6 +40,8 @@
 .section3 {
   background-color: white;
 }
+
+
 
 @media (max-width: 576px) {
   .jumboCustomContainer {
