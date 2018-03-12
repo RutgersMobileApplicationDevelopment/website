@@ -31,11 +31,13 @@
 }
 
 #bootstrap-overrides .customFooter li .active {
-  color: #A25050;
+  color: #CC5653;
 }
+
 #footerNav li .nav-link{
   color: white;
 }
+
 
 /* small devices */
 @media (max-width: 768px) {

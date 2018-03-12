@@ -1,3 +1,7 @@
+body {
+   font-family: 'Lato', sans-serif;
+ }
+
 .navbar {
   padding: 0;
   transition: 0.3s all;
@@ -15,7 +19,7 @@
 
 .custom-toggler .navbar-toggler-icon{
 
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(163, 80, 80, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(204, 86, 83, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 .navbar-toggler {
   border: none;
@@ -34,9 +38,17 @@
    color: gray;
  }
 
+ #bootstrap-overrides .navLinkChangeColor:hover {
+   color: #CC5653;
+ }
+
 /* navbar item text color */
 .navbar-dark .navbar-nav .nav-link {
    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+   color: #CC5653;
 }
 
 .navbar-dark .navbar-nav {
@@ -63,6 +75,7 @@
    }
    .navbar-dark .navbar-nav .nav-link {
       color: gray;
+    }
 
    #customNav {
      padding-top: 10px;
