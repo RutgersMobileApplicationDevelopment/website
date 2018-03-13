@@ -27,13 +27,24 @@
   z-index: -1;
 }
 
+
+
+#eCal .eCalEvent p {
+  margin: 0;
+}
+
+.eCalEvent {
+  margin-bottom: 1rem;
+
+}
+
 .customSection {
   /* height: 300px; */
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
 
-.customSection h1, h2, h3 {
+.customSection h1, h2, h3, h4, h5 {
   font-weight: bold;
 }
 
