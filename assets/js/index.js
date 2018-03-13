@@ -45,7 +45,7 @@ $.ajax({
     var eventStart = moment(calEvent.start.dateTime);
     var eventEnd = moment(calEvent.end.dateTime);
     var date = $('<p />', {
-      text: eventStart.format("MMM Do h:mm a") + " - " + eventEnd.format("h:mm a") + " | " + (calEvent.location || "Location TBD")
+      text: eventStart.format("MMMM Do h:mm a") + " - " + eventEnd.format("h:mm a") + " | " + (calEvent.location || "Location TBD")
     })
 
     wrapper.append(title);
