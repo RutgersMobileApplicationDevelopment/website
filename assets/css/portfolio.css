@@ -51,9 +51,15 @@
 
 
 
+
+
 @media (max-width: 576px) {
   .jumboCustomContainer {
     margin-top: 30px;
+  }
+
+  .apps img{
+    width: 80%;
   }
 
 }
