@@ -31,11 +31,16 @@
 
 #eCal .eCalEvent p {
   margin: 0;
+
+}
+
+#eCal {
+  margin-top: 2rem;
 }
 
 .eCalEvent {
   margin-bottom: 1rem;
-
+  text-align: center;
 }
 
 .customSection {
@@ -69,6 +74,10 @@
 @media (max-width: 576px) {
   .jumboCustomContainer {
     margin-top: 30px;
+  }
+
+  .eCalEvent {
+    text-align: left;
   }
 
 }

@@ -37,19 +37,28 @@ $.ajax({
 
 
     var wrapper = $('<div />', {
-      class: 'container eCalEvent'
+      class: 'col-sm eCalEvent'
       })
     var title = $('<h5 />', {
       text: calEvent.summary
       })
     var eventStart = moment(calEvent.start.dateTime);
     var eventEnd = moment(calEvent.end.dateTime);
-    var date = $('<p />', {
-      text: eventStart.format("MMMM Do h:mm a") + " - " + eventEnd.format("h:mm a") + " | " + (calEvent.location || "Location TBD")
+    var day = $('<p />', {
+      text:  eventStart.format("dddd ") + eventStart.format("MMMM Do ")
+    })
+    var time = $('<p />', {
+      text:  eventStart.format("h:mm a") + " - " + eventEnd.format("h:mm a")
+    })
+    var location = $('<p />', {
+      text:  calEvent.location || "Location TBD"
     })
 
+
     wrapper.append(title);
-    wrapper.append(date);
+    wrapper.append(day);
+    wrapper.append(time);
+    wrapper.append(location);
 
     if(calEvent.description) {
       console.log("theres a description");
