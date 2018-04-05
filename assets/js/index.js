@@ -21,7 +21,7 @@ var startDate = start.utc().format();
 var endDate = end.utc().format();
 
 $.ajax({
-    url: "https://www.googleapis.com/calendar/v3/calendars/p56apfhnjpnrqifht5hv8d0d3k@group.calendar.google.com/events",
+    url: "https://www.googleapis.com/calendar/v3/calendars/2l21akrpqkfd4mk8pg0iarmehc@group.calendar.google.com/events",
     dataType: 'json',
     data: {
         'singleEvents': true,
