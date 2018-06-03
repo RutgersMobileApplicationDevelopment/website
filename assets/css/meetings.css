@@ -1,5 +1,5 @@
 .jumbotron {
-  background-image: url("../images/bg.png");
+  background-image: url("../images/cover.png");
   text-align: center;
   height: 50vh;
 }
@@ -18,7 +18,7 @@
 
 .overlay {
   background-color: #000;
-  opacity: 0.8;
+  opacity: 0.6;
   position: absolute;
   top: 0;
   left: 0;
@@ -75,6 +75,10 @@
 @media (max-width: 576px) {
   .jumboCustomContainer {
     margin-top: 30px;
+  }
+
+  .jumbotron {
+    background-image: url("../images/conversmall.png");
   }
 
   .eCalEvent {

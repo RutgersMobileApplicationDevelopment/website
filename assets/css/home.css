@@ -1,5 +1,5 @@
 .jumbotron {
-  background-image: url("../images/bg.png");
+  background-image: url("../images/cover.png");
   text-align: center;
   height: 50vh;
 }
@@ -11,15 +11,14 @@
 .bg-cover {
   background-size: cover;
   color: white;
-  background-position: center center;
+  background-position: 50% 30%;
   position: relative;
   z-index: -2;
-
 }
 
 .overlay {
   background-color: #000;
-  opacity: 0.8;
+  opacity: 0.6;
   position: absolute;
   top: 0;
   left: 0;
@@ -50,11 +49,19 @@
   background-color: white;
 }
 
+.section4 {
+  background-color: #F9F9F9;
+}
+
 
 
 @media (max-width: 576px) {
   .jumboCustomContainer {
     margin-top: 30px;
+  }
+
+  .jumbotron {
+    background-image: url("../images/conversmall.png");
   }
 
 }

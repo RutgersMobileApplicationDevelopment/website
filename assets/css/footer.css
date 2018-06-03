@@ -1,9 +1,10 @@
 .customFooter {
-  background-color: #3A3C40;
+  background-color: #1E1D1D;
 }
 
 #bootstrap-overrides .customFooter {
   color: #707170;
+  /* color: black: */
 }
 
 .customFooter {
