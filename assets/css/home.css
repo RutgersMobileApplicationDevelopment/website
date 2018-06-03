@@ -53,6 +53,22 @@
   background-color: #F9F9F9;
 }
 
+.section4 {
+  background-color: #F9F9F9;
+}
+
+
+.carousel-inner {
+  text-align: center;
+}
+.carousel-item {
+  height: 500px;
+}
+.carousel-image {
+  height: 100%;
+}
+
+
 
 
 @media (max-width: 576px) {
@@ -62,6 +78,10 @@
 
   .jumbotron {
     background-image: url("../images/conversmall.png");
+  }
+
+  .carousel-item {
+    height: 300px;
   }
 
 }
