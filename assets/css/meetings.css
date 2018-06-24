@@ -58,6 +58,7 @@ p {
   /* height: 300px; */
   padding-top: 5vh;
   padding-bottom: 5vh;
+  text-align: center;
 }
 
 .customSection h1, h2, h3, h4, h5 {
@@ -99,9 +100,6 @@ p {
     text-align: left;
   }
 
-  .section2 {
-    text-align: center;
-  }
   .section2 img {
     width: 40%;
   }
