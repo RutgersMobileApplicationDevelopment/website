@@ -1,59 +1,3 @@
-.jumbotron {
-  background-image: url("../images/coverlight.png");
-  text-align: right;
-  height: 50vh;
-}
-
-p {
-  font-size: 1.3rem;
-}
-
-
-.jumboCustomContainer h1{
-  color: #CC5653;
-}
-.jumboCustomContainer p{
-  color: gray;
-}
-
-.jumbotron h1, h2, h2 {
-  font-weight: bold;
-}
-
-.bg-cover {
-  background-size: cover;
-  color: white;
-  background-position: 50% 30%;
-  position: relative;
-  z-index: -2;
-}
-
-.overlay {
-  background-color: #000;
-  opacity: 0.6;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-}
-
-.customSection {
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-  text-align: center;
-}
-
-.customSection h1, h2, h3 {
-  font-weight: bold;
-  margin: 15px;
-}
-
-.customSection p {
-  margin: 15px;
-}
-
 
 
 .section1 {
@@ -95,9 +39,6 @@ p {
   background-color: white;
 }
 
-
-
-
 .carousel-inner {
   text-align: center;
 }
@@ -109,27 +50,7 @@ p {
 }
 
 
-
-
 @media (max-width: 576px) {
-
-  p {
-    font-size: 1rem;
-  }
-
-  .container {
-    padding-right: 25px;
-    padding-left: 25px;
-  }
-
-  .jumboCustomContainer {
-    margin-top: 30px;
-  }
-
-  .jumbotron {
-    background-image: url("../images/coversmall.png");
-  }
-
 
 
   .mission .image-container {
