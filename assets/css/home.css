@@ -4,6 +4,11 @@
   height: 50vh;
 }
 
+p {
+  font-size: 1.3rem;
+}
+
+
 .jumboCustomContainer h1{
   color: #CC5653;
 }
@@ -35,18 +40,39 @@
 }
 
 .customSection {
-  /* height: 300px; */
   padding-top: 5vh;
   padding-bottom: 5vh;
+  text-align: center;
 }
 
 .customSection h1, h2, h3 {
   font-weight: bold;
+  margin: 15px;
 }
+
+.customSection p {
+  margin: 15px;
+}
+
+
 
 .section1 {
   background-color: white;
+}
+
+.mission {
+  margin: 20px;
   text-align: center;
+}
+
+.mission .image-container {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.mission img {
+  width: 100%;
 }
 
 .section2 {
@@ -61,9 +87,15 @@
   background-color: #F9F9F9;
 }
 
-.section4 {
-  background-color: #F9F9F9;
+.section5 {
+  background-color: white;
 }
+
+.section6 {
+  background-color: white;
+}
+
+
 
 
 .carousel-inner {
@@ -80,6 +112,16 @@
 
 
 @media (max-width: 576px) {
+
+  p {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
   .jumboCustomContainer {
     margin-top: 30px;
   }
@@ -88,8 +130,15 @@
     background-image: url("../images/coversmall.png");
   }
 
+
+
+  .mission .image-container {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+  }
+
   .carousel-item {
     height: 300px;
   }
-
 }

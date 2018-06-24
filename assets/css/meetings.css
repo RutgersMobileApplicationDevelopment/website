@@ -1,7 +1,17 @@
 .jumbotron {
-  background-image: url("../images/cover.png");
-  text-align: center;
+  background-image: url("../images/coverlight.png");
+  text-align: right;
   height: 50vh;
+}
+p {
+  font-size: 1.3rem;
+}
+
+.jumboCustomContainer h1{
+  color: #CC5653;
+}
+.jumboCustomContainer p{
+  color: gray;
 }
 
 .jumbotron h1, h2, h2 {
@@ -62,6 +72,10 @@
   background-color: #F9F9F9;
 }
 
+.section2 img {
+  width: 100%;
+}
+
 .section3 {
   background-color: white;
 }
@@ -78,11 +92,22 @@
   }
 
   .jumbotron {
-    background-image: url("../images/conversmall.png");
+    background-image: url("../images/coversmall.png");
   }
 
   .eCalEvent {
     text-align: left;
+  }
+
+  .section2 {
+    text-align: center;
+  }
+  .section2 img {
+    width: 40%;
+  }
+
+  .section2 p {
+    margin: 30px;
   }
 
 }
