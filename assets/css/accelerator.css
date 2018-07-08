@@ -36,7 +36,15 @@
   background-color: #F9F9F9;
 }
 
-
+.app-btn {
+  color: white;
+  background-color: #CC5653;
+  border-radius: 30px;
+  height: 50px;
+  width: 170px;
+  border-width: 0px;
+  margin-top: 20px;
+}
 
 @media (max-width: 576px) {
 
