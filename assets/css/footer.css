@@ -1,10 +1,11 @@
 .customFooter {
-  background-color: #1E1D1D;
+  background-color: #BA274A;
 }
 
 #bootstrap-overrides .customFooter {
-  color: #707170;
+  /* color: #707170; */
   /* color: black: */
+  color: white;
 }
 
 .customFooter {
@@ -32,7 +33,7 @@
 }
 
 #bootstrap-overrides .customFooter li .active {
-  color: #CC5653;
+  color: #420039;
 }
 
 #footerNav li .nav-link{

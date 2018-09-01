@@ -1,4 +1,13 @@
 
+.jumbotron {
+  background-image: url("../images/acceleratorcover.png");
+}
+
+.navChangeColor {
+   background-color: #593A75;
+   box-shadow: 0px 5px 10px #e0e0e0;
+}
+
 #eCal .eCalEvent p {
   margin: 0;
 
@@ -46,6 +55,14 @@
   margin-top: 20px;
 }
 
+.customFooter {
+  background-color: #593A75;
+}
+
+#bootstrap-overrides .customFooter li .active {
+  color: #F2A541;
+}
+
 @media (max-width: 576px) {
 
   .eCalEvent {
@@ -58,6 +75,10 @@
 
   .section2 p {
     margin: 30px;
+  }
+
+  .jumbotron {
+    background-image: url("../images/acceleratorcoversmall.png");
   }
 
 }

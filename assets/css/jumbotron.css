@@ -1,14 +1,19 @@
 .jumbotron {
-  background-image: url("../images/coverlight.png");
+  background-image: url("../images/cover.png");
   text-align: right;
-  height: 50vh;
+  height: 60vh;
 }
 
-.jumboCustomContainer h1{
-  color: #CC5653;
+/* .jumboCustomContainer h1{
+  color: white;
 }
 .jumboCustomContainer p{
   color: gray;
+} */
+.jumbotron h1 {
+  font-family: 'Fredoka One', cursive;
+  font-weight: normal;
+  font-size: 70px;
 }
 
 .jumbotron h1, h2, h2 {
@@ -43,4 +48,9 @@
   .jumbotron {
     background-image: url("../images/coversmall.png");
   }
+
+  .jumbotron h1 {
+    font-size: 55px;
+  }
+
 }
