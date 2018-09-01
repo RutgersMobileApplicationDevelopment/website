@@ -34,6 +34,7 @@
 
 #bootstrap-overrides .customFooter li .active {
   color: #420039;
+  font-weight: bold;
 }
 
 #footerNav li .nav-link{
