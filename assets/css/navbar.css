@@ -47,11 +47,9 @@ body {
 
  #bootstrap-overrides .navLinkChangeColor {
    color: white;
-   /* color: white; */
  }
 
  #bootstrap-overrides .navLinkChangeColor:hover {
-   /* color: #CC5653; */
    color: #420039;
  }
 

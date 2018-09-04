@@ -33,6 +33,18 @@ $.ajax({
         'key': 'AIzaSyAjlGe4WBEWtJY_B1o4beKYLp5t0zTjxT8'
     },
 }).done(function(data) {
+  if (data.items.length == 0) {
+    console.log("no event");
+    var wrapper = $('<div />', {
+      class: 'col-sm eCalEvent'
+      })
+    var title = $('<p />', {
+      text: "No events scheduled. Please check back later."
+      })
+    wrapper.append(title);
+    $("#eCal").append(wrapper);
+  }
+
   for (var i = 0; i< data.items.length; i++) {
     console.log(data.items[i]);
     var calEvent = data.items[i];
