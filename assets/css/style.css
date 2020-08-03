@@ -1,9 +1,9 @@
 body {
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
   font-family: 'Roboto', sans-serif;
-  margin: 0;
-  overflow-x: hidden;
-  position: relative;
+  /* margin: 0; */
+  /* overflow-x: hidden; */
+  /* position: relative; */
 }
 
 ul {
@@ -28,9 +28,108 @@ li a {
   font-family: 'Fredoka One', cursive;
 }
 
-h1 {
-  font-family: 'Fredoka One', cursive;
+.hibcontent{
+  display: flex;
+  align-items: center;
+  /* display: flex; */
+  margin-top: 50px;
+  margin-bottom: 110px;
+  /* Is there a better way to center? */
 }
+
+.newcontent{
+  width: 800px;
+  margin-left: 100px;
+}
+
+.newcontent h1{ /* for How It's Built, Accelerator, Inccubator, Fall 2020 */
+  font-family: 'Fredoka One', cursive;
+  /* min-height: 100px; */
+  /* background-color: #D53868; */
+  color: #22DCBA;
+  font-size: 4rem;
+}
+
+.newcontent p{
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 20px;
+  line-height: 2.75rem;
+}
+
+.hibtextstyle{
+  color: #22DCBA;
+  font-weight: 700;
+}
+
+.companyIcons{
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row1Icons, .row2Icons{
+  display: flex-wrap;
+  justify-content: center;
+}
+
+.bottom-margin{
+  margin-bottom: 30px;
+
+}
+
+.row1Icons{
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.companyIcons img{
+  height: 150px;
+}
+
+.fall2020{
+}
+
+.sectiontitle{
+  font-family: 'Fredoka One', cursive;
+  font-size: 4rem;
+  text-align: center;
+  color: #FF4502;
+}
+
+.cards{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card1, .card2, .card3{
+  padding: 20px;
+  box-sizing: border-box;
+  width: 30%;
+}
+
+.cards h3{
+  font-family: 'Fredoka One', cursive;
+  font-size: 2rem;
+  color: #FF4502;
+}
+
+.cards p{
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1.75rem;
+  line-height: 3.5rem;
+}
+
+.falltextstyle{
+  color: #FF4502;
+  font-weight: 700;
+}
+
 
 .selected {
   font-weight: 500;
@@ -124,7 +223,6 @@ h1 {
   display: flex;
   margin: auto;
   flex-direction: row;
-
   justify-content: space-between;
 }
 
@@ -166,11 +264,26 @@ h1 {
   top: 20vh;
 }
 
+
+.icons{
+  background-color: #292929;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 25px;
+}
+
+.icons a{
+  padding: 10px 20px;
+}
+
+
 @media only screen and (min-width: 430px) {
   .content {
     top: 50%;
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%); */
+    transform: translateY(-50%); 
   }
 }
 
@@ -214,4 +327,15 @@ h1 {
   .phone {
     display: none;
   }
+
+}
+
+i{
+  font-size: 3rem;
+  color: white;
+}
+
+i:hover{
+  color: #df4d68;
+  transition-duration: 0.5s;
 }
