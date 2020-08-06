@@ -20,8 +20,9 @@ body {
 
 h1 { /* for How It's Built, Accelerator, Inccubator, Fall 2020 */
     font-weight: 500;
-    font-size: 64px;
-    line-height: 70px;
+    font-size: 4rem;
+    /* line-height: 70px; */
+    
 }
 
 p{
@@ -127,6 +128,13 @@ p{
     height: 100vh;
 }
 
+.acceleratorcontent{
+    display: flex;
+    align-items: center;
+    
+}
+
+
 .accelerator h1 {
     color: #ffae42;
 }
@@ -146,8 +154,9 @@ p{
 }
 
 .phone {
-  width: 300px;
+  width: 600px;
   height: 500px;
+  padding: 0px 150px;
   display: block;
   margin: auto;
 }
@@ -230,7 +239,6 @@ p{
 
 .menu {
   width: 100%;
-
   display: flex;
   margin: auto;
   flex-direction: row;
@@ -255,7 +263,6 @@ p{
     height: 100vh;
     display: flex;
     align-items: center;
-    display: flex;
     /* margin-top: 50px; */
     /* margin-bottom: 110px; */
     /* Is there a better way to center? */
@@ -268,6 +275,8 @@ p{
   
 .hibtext p{
     margin-top: 20px;
+    margin-right: 75px;
+    background-color: #d53868;
 }
   
 .hibtextstyle{
