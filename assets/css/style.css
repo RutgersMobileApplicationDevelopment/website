@@ -48,6 +48,7 @@ body {
   /* width: 250px; */
 }
 
+/* Aug */
 @media screen and (min-width: 768px) {
   .navbar {
     display: flex;
@@ -441,3 +442,4 @@ i:hover{
   color: #df4d68;
   transition-duration: 0.5s;
 }
+
