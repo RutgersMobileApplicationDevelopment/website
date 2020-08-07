@@ -1,0 +1,35 @@
+.phone {
+    width: 300px;
+    height: 500px;
+    display: block;
+    margin: auto;
+    background-color: red;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.75rem;
+    line-height: 3.5rem;
+}
+
+h1 { /* for How It's Built, Accelerator, Inccubator, Fall 2020 */
+    font-weight: 500;
+    font-size: 4rem;
+    font-family: "Fredoka One", cursive;
+    /* line-height: 70px; */
+    
+}
+
+.acceleratorcontent{
+    /* display: flex; */
+    align-items: center;
+    background-color: yellowgreen;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 3em;
+}
+
+.acceleratortext{
+    background-color:aliceblue;
+}
