@@ -70,6 +70,22 @@ p{
     margin-right: 45px;
 }
 
+.nav-link:hover {
+    transform: scale(2);
+}
+
+#acceleratornav:hover{
+    color: #ffae42;
+}
+
+#hibnav:hover{
+    color: #22DCBA;
+}
+
+#fallnav:hover{
+    color: #FF4502;
+}
+
 .nav-link {
     text-decoration: none;
     margin-left: 40px;
@@ -90,7 +106,7 @@ p{
 
 /* About */
 .about {
-    height: 100vh;
+    /* height: 100vh; */
     padding-top: 110px;
     background-color: #052841;
 }
@@ -125,12 +141,15 @@ p{
 
 .accelerator{
     background-color: #436682;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .acceleratorcontent{
-    display: flex;
     align-items: center;
+    background-color: yellowgreen;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 3em;
     
 }
 
@@ -154,9 +173,9 @@ p{
 }
 
 .phone {
-  width: 600px;
+  width: 300px;
   height: 500px;
-  padding: 0px 150px;
+  /* padding: 0px 150px; */
   display: block;
   margin: auto;
 }
@@ -260,7 +279,7 @@ p{
 
 /* How It's Built */
 .hibcontent{
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     align-items: center;
     /* margin-top: 50px; */
@@ -310,7 +329,7 @@ p{
 /* Fall 2020 */
 .fall2020{
     background-color: #128fe8;
-    height: 70vh;
+    /* height: 70vh; */
 }
 
 .cards{
