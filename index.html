@@ -2,24 +2,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet"/>
+    <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
+    <link rel="stylesheet" href="assets/css/newstyles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"/>
     <title>RUMAD</title>
-    <script
-      src="https://kit.fontawesome.com/09e5d19d1f.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/09e5d19d1f.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <nav id="navbar" class="navbar">
@@ -65,19 +55,19 @@
           <a href="#about" class="nav-link selected">About</a>
         </li>
         <li>
-          <a href="#accelerator" class="nav-link">Accelerator</a>
+          <a href="#accelerator" id="acceleratornav" class="nav-link">Accelerator</a>
         </li>
         <li>
-          <a href="#" class="nav-link">How It's Built</a>
+          <a href="#howitsbuilt" id="hibnav" class="nav-link">How It's Built</a>
         </li>
         <li>
-          <a href="#" class="nav-link">Fall 2020</a>
+          <a href="#fall" id="fallnav" class="nav-link">Fall 2020</a>
         </li>
       </ul>
     </nav>
     <div id="about" class="about">
       <div class="content">
-        <h1>Hey There!</h1>
+        <h1 class="heythere">Hey There!</h1>
         <p>
           We’re the <b>Rutgers Mobile App Development Club! </b> We are a
           student-led Computer Science club invested in teaching the Rutgers
@@ -98,19 +88,14 @@
             href="https://forms.gle/5EbbwNSydDvmH6GZ8"
             target="_blank"
             class="button"
-            >Join our mailing list!</a
-          >
+            >Join our mailing list!</a>
           <ul>
             <li>
               <a href="https://www.facebook.com/rutgersmad/" target="_blank">
-                <i style="padding: 0.25em 0.4em;" class="fab fa-facebook-f"></i
-              ></a>
+                <i style="padding: 0.25em 0.4em;" class="fab fa-facebook-f"></i></a>
             </li>
             <li>
-              <a
-                href="https://github.com/RutgersMobileApplicationDevelopment"
-                target="_blank"
-              >
+              <a href="https://github.com/RutgersMobileApplicationDevelopment" target="_blank">
                 <i class="fab fa-github"></i>
               </a>
             </li>
@@ -119,19 +104,24 @@
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
+            <li>
+              <a href="mailto:rutgersmobile@gmail.com">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
-    <div id="accelerator" class="accelerator">
-      <div class="content">
+    <div class="testmargins">
+      <div id="accelerator" class="accelerator contentspacing">
         <h1>The Accelerator</h1>
-        <div class="column">
+        <div class="acceleratorcontent">
           <div>
             <img src="assets/images/lightbulb-phone.png" class="phone" />
           </div>
           <div>
-            <p>
+            <p class="acceleratortext">
               The goal of the Accelerator is to take students from knowing
               nothing about app development to a level where they can build and
               ship their own apps. They will pick a track from
@@ -147,61 +137,74 @@
             </p>
           </div>
         </div>
-        <h1>The Incubator</h1>
-        <div class="column">
-          <div>
-            <img src="assets/images/diagram-phone.png" class="phone" />
-          </div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod <b style="color: #66bfff;">group of six</b> ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
-            </p>
-            <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum <b style="color: #66bfff;">goal to publish an app</b>.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </div>
+        <!-- </div> -->
+        <!-- <h1>The Incubator</h1>
+                  <div class="column">
+                    <div>
+                      <img src="assets/images/diagram-phone.png" class="phone" />
+                    </div>
+                    <div>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod <b style="color: #66bfff;">group of six</b> ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                      </p>
+                      <p>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum <b style="color: #66bfff;">goal to publish an app</b>.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                        officia deserunt mollit anim id est laborum.
+                      </p>
+                    </div>
+                  </div> -->
       </div>
-    </div>
-
-    <div class="hibcontent">
-      <div class="newcontent">
-        <h1>How It's Built</h1>
-        <p>How It’s Built is a series of talks throughout the year that features guest speakers from top tech companies who share their experiences in the industry and their current projects. RUMAD has featured systems engineers and software engineers from <span class="hibtextstyle"> MongoDB, Facebook, Two Sigma, Tinder, and AppNexus.</span></p>
-        <p>With the Fall Semester going online, we decided to completely redesign How It’s Built. How It’s Built will be delivered in a innovative format that has never been seen at Rutgers before. Stay tuned, details will be <span class="hibtextstyle">released September 15th!</span> </p>
-      </div>
-      <div class="companyIcons">
-        <div class="row1Icons">
-          <img src="assets/images/cropped-fb.png" class="bottom-margin" alt="facebook logo">
-          <img src="assets/images/cropped-MongoDb.png" style="padding: 0px 40px;" alt="mongoDb logo">
-        </div>
-        <div class="row2Icons">
-          <img src="assets/images/cropped-tinder-2.png" class="bottom-margin" alt="tinder logo">
-          <img src="assets/images/cropped-Two_Sigma_logo.svg copy 2.png" alt="two sigma logo">
-        </div>
-      </div>
-    </div>
     
-    <div class="fall2020">
-      <h2 class="sectiontitle">Fall 2020</h2>
-      <div class="cards">
-        <div class="card1">
-          <h3>RUMAD App Fest</h3>
-          <p>RU App Fest is a <span class="falltextstyle">charity competition.</span> Students will submit and present their humanitarian mobile app projects based a theme to the sponsor company’s representative. Winners will win a cash prize to <span class="falltextstyle">dontate to a charity</span> of their choice and merch!</p>
+      <div class="hibcontent contentspacing">
+        <div class="hibtext">
+          <h1>How It's Built</h1>
+          <p>How It’s Built is a series of talks throughout the year that features guest speakers from top tech companies
+            who share their experiences in the industry and their current projects. RUMAD has featured systems engineers and
+            software engineers from <span class="hibtextstyle"> MongoDB, Facebook, Two Sigma, Tinder, and AppNexus.</span>
+          </p>
+          <p>With the Fall Semester going online, we decided to completely redesign How It’s Built. How It’s Built will be
+            delivered in a innovative format that has never been seen at Rutgers before. Stay tuned, details will be <span
+              class="hibtextstyle">released September 15th!</span> </p>
         </div>
-        <div class="card2">
-          <h3>iOS Workshops</h3>
-          <p>We will be hosting live-virtual workshops for those looking to be introduced to the world of iOS development. Together, we will build a <span class="falltextstyle">Calculator</span> app, a <span class="falltextstyle">Weather</span> app, and an app using <span class="falltextstyle">SwiftUI!</span> Join us every month and learn something new!</p>
-        </div><div class="card3">
-          <h3>Side Project Spotlight</h3>
-          <p>Come join us for Side Project Spotlight! The talk will host <span class="falltextstyle">relatable advice</span> and <span class="falltextstyle">actionable steps</span> that will help you start building your own side projects! Email us if you are interested in giving a talk about your own side project!</p>
+        <div class="companyIcons">
+          <div class="row1Icons">
+            <img src="assets/images/cropped-fb.png" class="bottom-margin" alt="facebook logo">
+            <img src="assets/images/cropped-MongoDb.png" style="padding: 0px 40px;" alt="mongoDb logo">
+          </div>
+          <div class="row2Icons">
+            <img src="assets/images/cropped-tinder-2.png" class="bottom-margin" alt="tinder logo">
+            <img src="assets/images/cropped-Two_Sigma_logo.svg copy 2.png" alt="two sigma logo">
+          </div>
+        </div>
+      </div>
+      <div class="fall2020 contentspacing">
+        <h1 class="sectiontitle">Fall 2020</h1>
+        <div class="cards">
+          <div class="card1">
+            <h3>RUMAD App Fest</h3>
+            <p>RU App Fest is a <span class="falltextstyle">charity competition.</span> Students will submit and present
+              their humanitarian mobile app projects based a theme to the sponsor company’s representative. Winners will win
+              a cash prize to <span class="falltextstyle">dontate to a charity</span> of their choice and merch!</p>
+          </div>
+          <div class="card2">
+            <h3>iOS Workshops</h3>
+            <p>We will be hosting live-virtual workshops for those looking to be introduced to the world of iOS development.
+              Together, we will build a <span class="falltextstyle">Calculator</span> app, a <span
+                class="falltextstyle">Weather</span> app, and an app using <span class="falltextstyle">SwiftUI!</span> Join
+              us every month and learn something new!</p>
+          </div>
+          <div class="card3">
+            <h3>Side Project Spotlight</h3>
+            <p>Come join us for Side Project Spotlight! The talk will host <span class="falltextstyle">relatable
+                advice</span> and <span class="falltextstyle">actionable steps</span> that will help you start building your
+              own side projects! Email us if you are interested in giving a talk about your own side project!</p>
+          </div>
         </div>
       </div>
     </div>
