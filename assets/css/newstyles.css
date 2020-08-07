@@ -14,7 +14,7 @@ body {
 
 .heythere {
     color: #f22c50;
-    font-size: 48px;
+    font-size: 3rem;
     padding-bottom: 0.5em;
 }
 
@@ -44,7 +44,7 @@ p{
 }
 
 .contentspacing{
-    padding: 50px 100px;
+    padding: 90px;
 }
 
 /* Nav bar */
@@ -216,6 +216,7 @@ p{
   color: white;
   font-size: 20px;
   transition: all 0.2s ease-in-out;
+  margin: 10px 0px;
 }
 
 .button:hover {
@@ -241,7 +242,7 @@ p{
 }
 
 .button-group ul li a i {
-  font-size: 2em;
+  font-size: 2rem;
   color: #f22c50;
   border: 3px solid #f22c50;
   border-radius: 50%;
@@ -385,4 +386,90 @@ i{
 i:hover{
     color: #df4d68;
     transition-duration: 0.5s;
+}
+
+@media only screen and (max-width: 800px){
+
+    .testmargins{
+        margin: 0px;
+    }
+    
+    .contentspacing{
+        padding: 0px;
+    }
+
+    p{
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+        text-align: center;
+        padding: 20px
+    }
+
+    h1{
+        margin-top: 50px;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+/* About */
+    .heythere{
+        font-size: 2.5rem;
+        /* text-align: start; */
+    }
+
+    .nav-items{
+        display: none;
+    }
+
+    .content {
+        margin: 0px;
+    }
+
+/* Accelerator */
+    .acceleratorcontent{
+        display: block;
+    }
+
+    .phone{
+        /* 3:5 width:height ration */
+        width: 120px;
+        height: 200px;
+        display: block;
+        margin: auto;
+    }
+
+/* How It's Built */
+    .hibcontent{
+        display: block;
+    }
+
+    .hibtext{
+        background-color: #ffae42;
+    }
+
+    .hibtext p{
+        margin: auto;
+    }
+
+    .companyIcons img{
+        height: 75px;
+    }
+
+/* Fall 2020 */
+    .cards{
+        background-color: #22DCBA;
+        display: block;
+    }
+
+    .fall2020 h3{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .card1, .card2, .card3 {
+        width: 100%;
+        margin-bottom: 10px;
+        background-color: #436682;
+    }
+
 }
