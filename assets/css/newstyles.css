@@ -5,7 +5,7 @@
   }
   
 body {
-    background-color: #ffffff;
+    background-color: #f4f2f2;
     font-family: "Fredoka One", cursive;
     margin: 0;
     overflow-x: hidden;
@@ -21,6 +21,7 @@ body {
 h1 { /* for How It's Built, Accelerator, Inccubator, Fall 2020 */
     font-weight: 500;
     font-size: 4rem;
+    margin-bottom: 20px;
     /* line-height: 70px; */
     
 }
@@ -55,7 +56,7 @@ p{
     /* padding: 0.5em 0em 0.5em 0em; */
     /* top: 0; */
     width: 100%;
-    background-color: #ffffff;
+    background-color: #f4f2f2;
     justify-content: space-between;
     /* box-shadow: 0px 1px 10px #999; */
     align-items: center;
@@ -112,7 +113,7 @@ p{
 .about {
     /* height: 100vh; */
     padding-top: 110px;
-    background-color: #052841;
+    /* background-color: #052841; */
 }
 
 .selected {
@@ -144,13 +145,13 @@ p{
 /* Accelerator */
 
 .accelerator{
-    background-color: #436682;
+    /* background-color: #436682; */
     /* height: 100vh; */
 }
 
 .acceleratorcontent{
     align-items: center;
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 3em;
@@ -284,13 +285,9 @@ p{
 
 /* How It's Built */
 .hibcontent{
-    /* height: 100vh; */
     display: flex;
     align-items: center;
-    /* margin-top: 50px; */
-    /* margin-bottom: 110px; */
-    /* Is there a better way to center? */
-    background-color: #66bfff;
+    /* background-color: #66bfff; */
 }
 
 .hibtext h1{
@@ -300,7 +297,7 @@ p{
 .hibtext p{
     margin-top: 20px;
     margin-right: 75px;
-    background-color: #d53868;
+    /* background-color: #d53868; */
 }
   
 .hibtextstyle{
@@ -333,7 +330,7 @@ p{
 
 /* Fall 2020 */
 .fall2020{
-    background-color: #128fe8;
+    /* background-color: #128fe8; */
     /* height: 70vh; */
 }
 
@@ -388,7 +385,32 @@ i:hover{
     transition-duration: 0.5s;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1000px){
+
+    .testmargins{
+        margin: 0px;
+    }
+    
+    .contentspacing{
+        padding: 0px;
+    }
+
+    p{
+        font-size: 1.3rem;
+        line-height: 2.25rem;
+        text-align: center;
+        padding: 20px
+    }
+
+    h1{
+        margin-top: 50px;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
 
     .testmargins{
         margin: 0px;
@@ -444,7 +466,7 @@ i:hover{
     }
 
     .hibtext{
-        background-color: #ffae42;
+        /* background-color: #ffae42; */
     }
 
     .hibtext p{
@@ -457,7 +479,7 @@ i:hover{
 
 /* Fall 2020 */
     .cards{
-        background-color: #22DCBA;
+        /* background-color: #22DCBA; */
         display: block;
     }
 
@@ -469,7 +491,7 @@ i:hover{
     .card1, .card2, .card3 {
         width: 100%;
         margin-bottom: 10px;
-        background-color: #436682;
+        /* background-color: #436682; */
     }
 
 }
