@@ -67,8 +67,8 @@
     </nav>
     <div id="about" class="about">
       <div class="content">
-        <h1 class="heythere">Hey There!</h1>
-        <p>
+        <h1 class="heythere animation-element fade-in-bottom">Hey There!</h1>
+        <p class="animation-element fade-in-bottom">
           We’re the <b>Rutgers Mobile App Development Club! </b> We are a
           student-led Computer Science club invested in teaching the Rutgers
           community about Mobile App Development. We teach incoming students the
@@ -115,13 +115,13 @@
     </div>
     <div class="testmargins">
       <div id="accelerator" class="accelerator contentspacing">
-        <h1>The Accelerator</h1>
+        <h1 class="animation-element fade-in-bottom">The Accelerator</h1>
         <div class="acceleratorcontent">
           <div>
             <img src="assets/images/lightbulb-phone.png" class="phone" />
           </div>
           <div>
-            <p class="acceleratortext">
+            <p class="acceleratortext animation-element fade-in-bottom">
               The goal of the Accelerator is to take students from knowing
               nothing about app development to a level where they can build and
               ship their own apps. They will pick a track from
@@ -161,14 +161,14 @@
                   </div> -->
       </div>
     
-      <div class="hibcontent contentspacing">
-        <div class="hibtext">
-          <h1>How It's Built</h1>
+      <div id="howitsbuilt" class="hibcontent contentspacing">
+        <div class="hibtext animation-element fade-in-bottom">
+          <h1 class="animation-element fade-in-bottom">How It's Built</h1>
           <p>How It’s Built is a series of talks throughout the year that features guest speakers from top tech companies
             who share their experiences in the industry and their current projects. RUMAD has featured systems engineers and
             software engineers from <span class="hibtextstyle"> MongoDB, Facebook, Two Sigma, Tinder, and AppNexus.</span>
           </p>
-          <p>With the Fall Semester going online, we decided to completely redesign How It’s Built. How It’s Built will be
+          <p class="animation-element fade-in-bottom">With the Fall Semester going online, we decided to completely redesign How It’s Built. How It’s Built will be
             delivered in a innovative format that has never been seen at Rutgers before. Stay tuned, details will be <span
               class="hibtextstyle">released September 15th!</span> </p>
         </div>
@@ -183,9 +183,9 @@
           </div>
         </div>
       </div>
-      <div class="fall2020 contentspacing">
-        <h1 class="sectiontitle">Fall 2020</h1>
-        <div class="cards">
+      <div id="fall" class="fall2020 contentspacing">
+        <h1 class="sectiontitle animation-element fade-in-bottom">Fall 2020</h1>
+        <div class="cards animation-element fade-in-bottom">
           <div class="card1">
             <h3>RUMAD App Fest</h3>
             <p>RU App Fest is a <span class="falltextstyle">charity competition.</span> Students will submit and present
@@ -232,6 +232,8 @@
       </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script>
       document.getElementById("navbar").style.padding = "0.5em 0em";
       // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
@@ -254,6 +256,34 @@
           document.getElementById("navbar").style.boxShadow = "";
         }
       }
+
+        $(function () {
+          // add animation-element to every element we want to fade in
+          var $animation_elements = $(".animation-element");
+          var $window = $(window);
+
+          // will animate based on middle position
+          function check_if_in_view() {
+            var window_height = $window.height();
+            var window_top_position = $window.scrollTop();
+            var window_bottom_position = window_top_position + window_height;
+            var window_middle_position =
+              (window_bottom_position + window_top_position) / 2;
+
+            $.each($animation_elements, function () {
+              var $element = $(this);
+              console.log($element)
+              var element_top_position = $element.offset().top;
+              var element_trigger_position = element_top_position - 200;
+              //check to see if this current container is within viewport
+              if (element_trigger_position <= window_middle_position) {
+                $element.addClass("trigger");
+              }
+            });
+        }
+
+  $window.on("scroll resize load", check_if_in_view);
+});
     </script>
   </body>
 </html>
