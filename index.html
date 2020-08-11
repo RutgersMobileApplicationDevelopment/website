@@ -52,7 +52,7 @@
       </a>
       <ul class="nav-items" id="js-menu">
         <li>
-          <a href="#about" class="nav-link selected">About</a>
+          <a href="#about" id="aboutnav" class="nav-link selected">About</a>
         </li>
         <li>
           <a href="#accelerator" id="acceleratornav" class="nav-link">Accelerator</a>
@@ -256,7 +256,40 @@
         }
 
       }
+      
+      function changeNavColor() {
+        $(function () {
+          var accpos = document.getElementById("accelerator").offsetTop-100;
+          var hibpos = document.getElementById("howitsbuilt").offsetTop-100;
+          var fallpos = document.getElementById("fall").offsetTop-100;
 
+          var $window = $(window);
+          if($window.scrollTop() > fallpos ){
+            $("#aboutnav").css("color", "#2f2d2e");
+            $("#acceleratornav").css("color", "#2f2d2e");
+            $("#hibnav").css("color", "#2f2d2e");
+            $("#fallnav").css("color", "#FF4502");
+
+          } else if($window.scrollTop() > hibpos ){
+            $("#aboutnav").css("color", "#2f2d2e");
+            $("#acceleratornav").css("color", "#2f2d2e");
+            $("#hibnav").css("color", "#22DCBA");
+            $("#fallnav").css("color", "#2f2d2e");
+            
+          } else if ($window.scrollTop() > accpos ) {
+            $("#aboutnav").css("color", "#2f2d2e");
+            $("#acceleratornav").css("color", "#ffae42");
+            $("#hibnav").css("color", "#2f2d2e");
+            $("#fallnav").css("color", "#2f2d2e");
+          } else {
+            $("#aboutnav").css("color", "#f22c50");
+            $("#acceleratornav").css("color", "#2f2d2e");
+            $("#hibnav").css("color", "#2f2d2e");
+            $("#fallnav").css("color", "#2f2d2e");
+          }
+
+        })
+      }
       
 
       $(function () {
