@@ -237,6 +237,7 @@
       // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
       window.onscroll = function () {
         scrollFunction();
+        changeNavColor();
       };
 
       function scrollFunction() {
@@ -253,35 +254,38 @@
           document.getElementById("nav-logo").style.width = "418px";
           document.getElementById("navbar").style.boxShadow = "";
         }
+
       }
 
-        $(function () {
-          // add animation-element to every element we want to fade in
-          var $animation_elements = $(".animation-element");
-          var $window = $(window);
+      
 
-          // will animate based on middle position
-          function check_if_in_view() {
-            var window_height = $window.height();
-            var window_top_position = $window.scrollTop();
-            var window_bottom_position = window_top_position + window_height;
-            var window_middle_position =
-              (window_bottom_position + window_top_position) / 2;
+      $(function () {
+        // add animation-element to every element we want to fade in
+        var $animation_elements = $(".animation-element");
+        var $window = $(window);
 
-            $.each($animation_elements, function () {
-              var $element = $(this);
-              console.log($element)
-              var element_top_position = $element.offset().top;
-              var element_trigger_position = element_top_position - 200;
-              //check to see if this current container is within viewport
-              if (element_trigger_position <= window_middle_position) {
-                $element.addClass("trigger");
-              }
-            });
+        // will animate based on middle position
+        function check_if_in_view() {
+          var window_height = $window.height();
+          var window_top_position = $window.scrollTop();
+          var window_bottom_position = window_top_position + window_height;
+          var window_middle_position =
+            (window_bottom_position + window_top_position) / 2;
+
+          $.each($animation_elements, function () {
+            var $element = $(this);
+            //console.log($element)
+            var element_top_position = $element.offset().top;
+            var element_trigger_position = element_top_position - 200;
+            //check to see if this current container is within viewport
+            if (element_trigger_position <= window_middle_position) {
+              $element.addClass("trigger");
+            }
+          });
         }
 
-  $window.on("scroll resize load", check_if_in_view);
-});
+        $window.on("scroll resize load", check_if_in_view);
+      });
     </script>
   </body>
 </html>
