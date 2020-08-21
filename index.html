@@ -264,19 +264,19 @@
           var fallpos = document.getElementById("fall").offsetTop-100;
 
           var $window = $(window);
-          if($window.scrollTop() > fallpos ){
+          if($window.scrollTop() >= fallpos ){
             $("#aboutnav").css("color", "#2f2d2e");
             $("#acceleratornav").css("color", "#2f2d2e");
             $("#hibnav").css("color", "#2f2d2e");
             $("#fallnav").css("color", "#FF4502");
 
-          } else if($window.scrollTop() > hibpos ){
+          } else if($window.scrollTop() >= hibpos ){
             $("#aboutnav").css("color", "#2f2d2e");
             $("#acceleratornav").css("color", "#2f2d2e");
             $("#hibnav").css("color", "#22DCBA");
             $("#fallnav").css("color", "#2f2d2e");
             
-          } else if ($window.scrollTop() > accpos ) {
+          } else if ($window.scrollTop() >= accpos ) {
             $("#aboutnav").css("color", "#2f2d2e");
             $("#acceleratornav").css("color", "#ffae42");
             $("#hibnav").css("color", "#2f2d2e");
