@@ -10,6 +10,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     position: absolute;
+    width: 100vw
 }
 
 .heythere {
@@ -29,7 +30,7 @@ h1 { /* for How It's Built, Accelerator, Inccubator, Fall 2020 */
 p{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    font-size: 1.75rem;
+    font-size: 1.65rem;
     line-height: 3.5rem;
 }
 
