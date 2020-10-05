@@ -352,6 +352,15 @@ p{
     background-color: #ffad4294;
 }
 
+.hibVideos{
+    display: flex;
+    justify-content: space-evenly
+}
+
+.hibVideos iframe{
+    /* margin: 0px 25px; */
+}
+
 
 /* Fall 2020 */
 .fall2020{
