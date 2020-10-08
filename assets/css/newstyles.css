@@ -413,6 +413,14 @@ i{
     font-size: 3rem;
     color: white;
 }
+
+.heart{
+    color: #df4d68;
+}
+
+.signature{
+    text-align: center;
+}
   
 i:hover{
     color: #df4d68;
