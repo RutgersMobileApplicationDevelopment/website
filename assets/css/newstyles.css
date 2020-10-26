@@ -530,6 +530,21 @@ i:hover{
         justify-content: space-evenly;
     }
 
+    .capTalk{
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        padding-top: 5%;
+    }
+
+    .comingSoon{
+        display: none;
+    }
+
 /* Fall 2020 */
     .cards{
         /* background-color: #22DCBA; */
