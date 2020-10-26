@@ -361,6 +361,18 @@ p{
     /* margin: 0px 25px; */
 }
 
+.comingSoon{
+    border: #df4d68;
+    border-style: dashed;
+    border-width: 2px;
+    width: 444px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: coral;
+}
+
 
 /* Fall 2020 */
 .fall2020{
