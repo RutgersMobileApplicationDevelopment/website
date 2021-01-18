@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
   }
-  
+
 body {
     background-color: #f4f2f2;
     font-family: "Fredoka One", cursive;
@@ -24,7 +24,7 @@ h1 { /* for How It's Built, Accelerator, Inccubator, Fall 2020 */
     font-size: 4rem;
     margin-bottom: 20px;
     /* line-height: 70px; */
-    
+
 }
 
 p{
@@ -157,7 +157,7 @@ p{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 3em;
-    
+
 }
 
 
@@ -299,13 +299,13 @@ p{
 .hibtext h1{
     color: #22DCBA;
 }
-  
+
 .hibtext p{
     margin-top: 20px;
     margin-right: 75px;
     /* background-color: #d53868; */
 }
-  
+
 .hibtextstyle{
     color: #22DCBA;
     font-weight: 700;
@@ -384,13 +384,13 @@ p{
     display: flex;
     justify-content: space-between;
 }
-  
+
 .card1, .card2, .card3{
     padding: 20px;
     box-sizing: border-box;
     width: 30%;
 }
-  
+
 .cards h3{
     font-family: 'Fredoka One', cursive;
     font-size: 2rem;
@@ -401,7 +401,7 @@ p{
     color: #FF4502;
     text-align: center;
 }
-   
+
 .falltextstyle{
     color: #FF4502;
     font-weight: 700;
@@ -415,7 +415,7 @@ p{
     box-sizing: border-box;
     padding: 25px;
   }
-  
+
   .icons a{
     padding: 10px 20px;
   }
@@ -425,7 +425,7 @@ i{
     font-size: 3rem;
     color: white;
 }
-  
+
 i:hover{
     color: #df4d68;
     transition-duration: 0.5s;
@@ -436,7 +436,7 @@ i:hover{
     .testmargins{
         margin: 0px;
     }
-    
+
     .contentspacing{
         padding: 0px;
     }
@@ -461,7 +461,7 @@ i:hover{
     .testmargins{
         margin: 0px;
     }
-    
+
     .contentspacing{
         padding: 0px;
     }
@@ -599,4 +599,3 @@ i:hover{
       opacity: 1;
     }
   }
-  
