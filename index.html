@@ -61,7 +61,7 @@
           <a href="#howitsbuilt" id="hibnav" class="nav-link">How It's Built</a>
         </li>
         <li>
-          <a href="#fall" id="fallnav" class="nav-link">Fall 2020</a>
+          <a href="#spring2021" id="spring2021nav" class="nav-link">Spring 2021</a>
         </li>
       </ul>
     </nav>
@@ -134,19 +134,15 @@
             <p class="acceleratortext">
               The goal of the Accelerator is to take students from knowing
               nothing about app development to a level where they can build and
-              ship their own apps. They will pick a track from
+              ship their own apps. Mentees pick a track from
               <b style="color: #4b0082;">iOS, Android, or Backend</b>
               development to learn about.
               <br />
               <br />
-              We will also provide every mentee in the Accelerator program with
-              close mentorship from an experienced mentor. They will receive
+              We also provide every mentee in the Accelerator program with
+              close mentorship from an experienced mentor. They receive
               career and academic guidance to help ensure they are successful in
-              their journey at
-              <b style="color: #f22c50;">Rutgers</b> and beyond.
-              <br />
-              <br />
-              Due to the fall semester being online, the Accelerator program has been moved to the spring semester. Applications will come out in <b style="color: #f22c50;">December</b>.
+              their journey at <b style="color: #f22c50;">Rutgers</b> and beyond.
             </p>
           </div>
         </div>
@@ -204,26 +200,26 @@
 
       </div>
 
-      <div id="fall" class="fall2020 contentspacing">
-        <h1 class="sectiontitle animation-element fade-in-bottom">Fall 2020</h1>
+      <div id="spring2021" class="spring2021 contentspacing">
+        <h1 class="sectiontitle animation-element fade-in-bottom">Spring 2021</h1>
         <div class="cards animation-element fade-in-bottom">
           <div class="card1">
             <h3>RUMAD App Fest</h3>
-            <p>RU App Fest is a <span class="falltextstyle">charity competition.</span> Students will submit and present
+            <p>RU App Fest is a <span class="emphasized-text">charity competition.</span> Students will submit and present
               their humanitarian mobile app projects based a theme to the sponsor company’s representative. Winners will win
-              a cash prize to <span class="falltextstyle">dontate to a charity</span> of their choice and merch!</p>
+              a cash prize to <span class="emphasized-text">dontate to a charity</span> of their choice and merch!</p>
           </div>
           <div class="card2">
-            <h3>iOS Workshops</h3>
-            <p>We will be hosting live-virtual workshops for those looking to be introduced to the world of iOS development.
-              Together, we will build a <span class="falltextstyle">Calculator</span> app, a <span
-                class="falltextstyle">Weather</span> app, and an app using <span class="falltextstyle">SwiftUI!</span> Join
-              us every month and learn something new!</p>
+            <h3>SwiftUI and React Workshops</h3>
+            <p>We will be hosting live virtual workshops for those looking to be introduced to iOS and React development.
+                Together, we'll build a SwiftUI <span class="emphasized-text">menu app</span>. We'll also learn about React
+                <span class="emphasized-text">styling</span> and build a <span class="emphasized-text">portfolio website</span>!
+                Join us every month and learn something new!</p>
           </div>
           <div class="card3">
             <h3>Side Project Spotlight</h3>
-            <p>Come join us for Side Project Spotlight! The talk will host <span class="falltextstyle">relatable
-                advice</span> and <span class="falltextstyle">actionable steps</span> that will help you start building your
+            <p>Come join us for Side Project Spotlight! The talk will host <span class="emphasized-text">relatable
+                advice</span> and <span class="emphasized-text">actionable steps</span> that will help you start building your
               own side projects! Email us if you are interested in giving a talk about your own side project!</p>
           </div>
         </div>
@@ -284,31 +280,31 @@
         $(function () {
           var accpos = document.getElementById("accelerator").offsetTop-100;
           var hibpos = document.getElementById("howitsbuilt").offsetTop-100;
-          var fallpos = document.getElementById("fall").offsetTop-100;
+          var spring2021pos = document.getElementById("spring2021").offsetTop-100;
 
           var $window = $(window);
-          if($window.scrollTop() >= fallpos ){
+          if($window.scrollTop() >= spring2021pos ){
             $("#aboutnav").css("color", "#2f2d2e");
             $("#acceleratornav").css("color", "#2f2d2e");
             $("#hibnav").css("color", "#2f2d2e");
-            $("#fallnav").css("color", "#FF4502");
+            $("#spring2021nav").css("color", "#3BD902");
 
           } else if($window.scrollTop() >= hibpos ){
             $("#aboutnav").css("color", "#2f2d2e");
             $("#acceleratornav").css("color", "#2f2d2e");
             $("#hibnav").css("color", "#22DCBA");
-            $("#fallnav").css("color", "#2f2d2e");
+            $("#spring2021nav").css("color", "#2f2d2e");
 
           } else if ($window.scrollTop() >= accpos ) {
             $("#aboutnav").css("color", "#2f2d2e");
             $("#acceleratornav").css("color", "#ffae42");
             $("#hibnav").css("color", "#2f2d2e");
-            $("#fallnav").css("color", "#2f2d2e");
+            $("#spring2021nav").css("color", "#2f2d2e");
           } else {
             $("#aboutnav").css("color", "#f22c50");
             $("#acceleratornav").css("color", "#2f2d2e");
             $("#hibnav").css("color", "#2f2d2e");
-            $("#fallnav").css("color", "#2f2d2e");
+            $("#spring2021nav").css("color", "#2f2d2e");
           }
 
         })

@@ -19,7 +19,7 @@ body {
     padding-bottom: 0.5em;
 }
 
-h1 { /* for How It's Built, Accelerator, Inccubator, Fall 2020 */
+h1 { /* for How It's Built, Accelerator, Inccubator, Spring 2021 */
     font-weight: 500;
     font-size: 4rem;
     margin-bottom: 20px;
@@ -89,8 +89,8 @@ p {
     color: #22DCBA;
 }
 
-#fallnav:hover {
-    color: #FF4502;
+#springnav:hover {
+    color: #3BD902;
 }
 
 .nav-link {
@@ -374,8 +374,8 @@ p {
 }
 
 
-/* Fall 2020 */
-.fall2020 {
+/* Spring 2021 */
+.spring2021 {
     /* background-color: #128fe8; */
     /* height: 70vh; */
 }
@@ -391,19 +391,19 @@ p {
     width: 30%;
 }
 
-.cards h3 {
+.spring2021 .cards h3 {
     font-family: 'Fredoka One', cursive;
     font-size: 2rem;
-    color: #FF4502;
+    color: #3BD902;
 }
 
-.fall2020 h1 {
-    color: #FF4502;
+.spring2021 h1 {
+    color: #3BD902;
     text-align: center;
 }
 
-.falltextstyle {
-    color: #FF4502;
+.spring2021 .emphasized-text {
+    color: #3BD902;
     font-weight: 700;
 }
 
@@ -545,13 +545,13 @@ i:hover {
         display: none;
     }
 
-    /* Fall 2020 */
+    /* Spring 2021 */
     .cards {
         /* background-color: #22DCBA; */
         display: block;
     }
 
-    .fall2020 h3 {
+    .spring2021 h3 {
         font-size: 1.5rem;
         text-align: center;
     }
