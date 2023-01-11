@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+:root {
+  --text-primary:   #7C818A;
+  --text-secondary:   #F22C50;
+}
+
+html {
+  padding: 1rem;
+  background-color: #E6E9EF;
+}
+
+body {
+  margin: 0;
+  font-family: 'Michroma', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  color: var(--text-primary),
+}
+
+.circle {
+  border-radius: 50%;
+  box-shadow:  20px 20px 60px #bebebe,
+               -20px -20px 60px #ffffff;
+}
+
+.circle-2x {
+  width: 12rem;
+  height: 12rem;
+}
+
+.raise {
+  border-radius: 30px;
+  box-shadow: 18px 18px 20px #D1D9E6,
+              -18px -18px 20px #ffffff;
+}
+
+.lower {
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: inset 18px 18px 30px #D1D9E6,
+              inset -18px -18px 30px #ffffff;
+}
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
