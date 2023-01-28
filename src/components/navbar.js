@@ -32,14 +32,13 @@ class NavBar extends React.Component {
     }
 
     setLoc(newLoc){
-        // console.log(this.state.loc)
         this.setState({loc:newLoc})
     }
 
     render() {
-        return <div class="flex-row">
+        return <div class="flex-row nav-row">
             <div class="nav-icon">
-                <div class="circle-2x circle align-center">
+                <div class="circle-2x circle circle-raised align-center">
                     <img src="./logo.png"/>
                 </div>
             </div>

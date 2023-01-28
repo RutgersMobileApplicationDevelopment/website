@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
 
 :root {
   --text-primary:   #7C818A;
   --text-secondary:   #F22C50;
+  --text-tertiary: #A3A8AE;
+
+  --background: #E6E9EF
 }
 
 html {
   padding: 1rem;
-  background-color: #E6E9EF;
+  background-color: var(--background);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  margin: 0 2% 0 2%;
 }
 
 body {
@@ -27,6 +34,13 @@ p {
                -20px -20px 60px #ffffff;
 }
 
+.circle-raised {
+  box-shadow: 20px 20px 60px #bebebe,
+              -20px -20px 60px #ffffff,
+              18px 18px 20px #ffffff inset,
+              -18px -18px 20px #D1D9E6 inset;
+}
+
 .circle-2x {
   width: 12rem;
   height: 12rem;
@@ -42,19 +56,226 @@ p {
   border-radius: 20px;
   padding: 2rem;
   box-shadow: inset 18px 18px 30px #D1D9E6,
-              inset -18px -18px 30px #ffffff;
+  inset -18px -18px 30px #ffffff;
+}
+
+.section-flex {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.align-left {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.align-right {
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
 
 .align-center {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .flex-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+}
+
+.row-wrap {
+  flex-wrap: wrap;
+}
+
+.resize-row-2x {
+  width: 100vw;
+}
+
+.resize-row {
+  padding-top: 4rem;
+  width: 50%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
 }
 
 
+.resize-inner {
+  gap: 3rem;
+  flex-shrink: 1;
+  min-width: 15%;
+  width: fit-content
+}
+
+.flex-grow-1{
+  flex-grow: 1;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.space-between {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.section-text {
+  font-family: 'ABeeZee', sans-serif;;
+  font-size: 1.33rem;
+}
+
+.overflow-col {
+  display: flex;
+  flex-direction: column;
+  min-width: 350px;
+  flex-grow: 1;
+}
+
+.header {
+  font-size: 2rem;
+}
+
+.subtext {
+  font-size: 1.33rem;
+  font-family: 'ABeeZee', sans-serif;;
+}
+
+/* .bounded-text-100x {
+  max-width: 100%;
+  max-height: fit-content;
+}
+
+.bounded-text-75x {
+  max-width: 45rem;
+  max-height: fit-content;
+} */
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary)
+}
+
+.text-tertiary {
+  color: var(--text-tertiary)
+}
+
+.vertical-pad {
+  padding: 1rem;
+  min-height: 1rem;
+}
+
+.horizontal-pad {
+  padding: 1rem;
+  min-width: 1rem;
+}
+
+.vertical-pad-2x {
+  padding: 2rem;
+  min-height: 2rem;
+}
+
+.horizontal-pad-2x {
+  padding: 2rem;
+  min-width: 2rem;
+}
+
+.vertical-pad-4x {
+  padding: 4rem;
+  min-height: 4rem;
+}
+
+.horizontal-pad-4x {
+  padding: 4rem;
+  min-width: 4rem;
+}
+
+.vertical-pad-8x {
+  padding: 4rem;
+  min-height: 4rem;
+}
+
+.href-btn {
+  padding: 1rem;
+}
+
+.pad {
+  padding: 1rem;
+}
+
+.pad-2x {
+  padding: 2rem;
+}
+
+.pad-4x {
+  padding: 4rem;
+}
+
+.square {
+  aspect-ratio: 1/1;
+}
+
+.icon-wrapper {
+  margin-left: 1rem;
+  max-width: 384px;
+  max-height: 384px;
+  min-width: 256px;
+  min-height: 256px;
+}
+
+.accelerator-wrapper {
+  width: 640px;
+  min-width: 50%;
+  max-width: 100%;
+  padding: 5%;
+}
+
+.caption-group {
+  border-radius: 10%;
+  padding: 10% 1rem 10% 1rem;
+  max-width: -moz-fit-content;
+  max-width: fit-content; 
+  width: 100%;
+  min-width: 64px;
+  height: fit-content;
+  flex-shrink: 1;
+}
+
+/* .incubator-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 128px);
+  grid-auto-rows: 1fr;
+  grid-gap: 4rem;
+  justify-items: center;
+} */
+
+.incubator-group {
+  min-width: 10rem;
+  min-height: 10rem;
+  max-width: 12rem;
+  max-height: 12rem;
+  padding: 1rem;
+}
+
+.caption-group img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.icon-row {
+  padding: 2rem;
+  gap: 10%;
+}
