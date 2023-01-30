@@ -151,6 +151,10 @@ p {
     /* height: 100vh; */
 }
 
+.accelerator h1 {
+    color: #ffae42;
+}
+
 .acceleratorcontent {
     align-items: center;
     /* background-color: yellowgreen; */
@@ -161,9 +165,14 @@ p {
 }
 
 
-.accelerator h1 {
-    color: #ffae42;
+.incubatorcontent {
+    align-items: center;
+    /* background-color: yellowgreen; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 3em;
 }
+
 
 /* below for Incubator */
 /* .accelerator .content h1:nth-child(3) {

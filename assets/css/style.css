@@ -250,6 +250,10 @@ h1 {
   margin-top: 5vh;
 }
 
+.incubator h1 {
+  color: rgb(102, 191, 254);
+}
+
 .column {
   display: grid;
   grid-template-columns: 1fr 2fr;
