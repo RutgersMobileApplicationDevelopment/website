@@ -4,20 +4,29 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet" /> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Michroma&display=swap" rel="stylesheet">
   <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
-  <link rel="stylesheet" href="assets/css/newstyles.css">
-
+  <link rel="stylesheet" href="./public/css/newstyles.css">
+  <link href="./public/css/hamburgers.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
   <title>RUMAD</title>
   <script src="https://kit.fontawesome.com/09e5d19d1f.js" crossorigin="anonymous"></script>
+  <script defer src="./public/js/navbar.js"></script>
 </head>
-
 <body>
   <nav id="navbar" class="navbar animation-element fade-in-bottom trigger">
     <a href="">
-      <img class="nav-logo" id="nav-logo" width="418" height="130" src="./assets/images/logo.svg"/>
+      <img class="nav-logo" id="nav-logo" width="256px" height="130" src="./public/img/logo.svg"/>
     </a>
+    
+    <button class="hamburger hamburger--spin" type="button" id="nav-button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
     <ul class="nav-items trigger" id="js-menu">
       <li>
         <a href="#about" id="aboutnav" class="nav-link selected trigger">About</a>
@@ -38,9 +47,9 @@
   </nav>
   <div id="about" class="about">
     <div class="content">
-      <h1 class="heythere animation-element fade-in-bottom trigger">Hey There!</h1>
+      <h1 class="heythere animation-element fade-in-bottom trigger"><b>Hey There!</b></h1>
       <p class="animation-element fade-in-bottom trigger">
-        We're the <b>Rutgers Mobile App Development Club! </b> We are a
+        We're the <b><span style="color:#F22C50">Rutgers Mobile App Development Club</span>!</b> We are a
         student-led Computer Science club invested in teaching the Rutgers
         community about Mobile App Development. We teach incoming students the
         fundamentals of mobile app development in a program called
@@ -100,12 +109,12 @@
       <h1 class="animation-element fade-in-bottom">The Accelerator</h1>
       <div class="acceleratorcontent">
         <div>
-          <img src="assets/images/lightbulb-phone.png" class="phone" />
+          <img src="./public/img/lightbulb-phone.png" class="phone" />
         </div>
         <div>
           <p class="acceleratortext">
             The goal of the Accelerator is to take students from knowing nothing about app development to a level where
-            they can build and ship their own apps. They will pick a track from <b style="color: #4b0082;">iOS, Android,
+            they can build and ship their own apps. They will pick a track from <b style="color: black">iOS, Android,
               or Backend</b> development to learn about.
             <br />
             <br />
@@ -123,7 +132,7 @@
       <h1 class="animation-element fade-in-bottom">The Incubator</h1>
       <div class="column acceleratorcontent animation-element fade-in-bottom">
         <div>
-          <img src="assets/images/diagram-phone.png" class="phone" />
+          <img src="./public/img/diagram-phone.png" class="phone" />
         </div>
         <div>
           <p>
@@ -235,8 +244,8 @@
         <i class="fas fa-envelope"></i>
       </a>
     </div>
-    <p style="text-align: center;">Made with <i style="color: #df4d68;" class="fas fa-heart heart"></i> by <b>Sujit
-        Molleti</b></p>
+    <!-- <p style="text-align: center;">Made with <i style="color: #df4d68;" class="fas fa-heart heart"></i> by <b>Sujit
+        Molleti</b></p> -->
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -249,21 +258,13 @@
       changeNavColor();
     };
 
-    function scrollFunction() {
-      if (
-        document.body.scrollTop > 25 ||
-        document.documentElement.scrollTop > 25
-      ) {
-        document.getElementById("nav-logo").style.width = "250px";
-        document.getElementById("navbar").style.padding = "0em 0em";
-        document.getElementById("navbar").style.boxShadow =
-          "0px 1px 10px #999";
-      } else {
-        document.getElementById("navbar").style.padding = "0.5em 0em";
-        document.getElementById("nav-logo").style.width = "418px";
-        document.getElementById("navbar").style.boxShadow = "";
-      }
 
+    function scrollFunction() {
+      if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25 || window.innerWidth <= 1024){
+          document.getElementById("navbar").classList.toggle("navbar-solid", true)
+        } else {
+          document.getElementById("navbar").classList.toggle("navbar-solid", false)
+        }
     }
 
     function changeNavColor() {
@@ -342,6 +343,7 @@
       $window.on("scroll resize", check_if_in_view);
       check_if_in_view()
     });
+    scrollFunction()
   </script>
 </body>
 

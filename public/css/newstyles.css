@@ -6,7 +6,7 @@
 
 body {
     background-color: #f4f2f2;
-    font-family: "Fredoka One", cursive;
+    font-family: 'ABeeZee', sans-serif;
     margin: 0;
     overflow-x: hidden;
     position: absolute;
@@ -28,9 +28,10 @@ h1 { /* for How It's Built, Accelerator, Inccubator, Spring 2021 */
 }
 
 p {
-    font-family: 'Lato', sans-serif;
+    font-family: 'ABeeZee', sans-serif;
     font-weight: 300;
     font-size: 1.65rem;
+    color: #7C818A;
     line-height: 3.5rem;
 }
 
@@ -49,19 +50,31 @@ p {
     padding: 90px;
 }
 
+.navbar-solid {
+    padding: 0em 0em;
+    box-shadow: 0px 1px 10px #999;
+}
+
 /* Nav bar */
 .navbar {
     display: flex;
     overflow: hidden;
     position: fixed;
+    flex-wrap: wrap;
     /* padding: 0.5em 0em 0.5em 0em; */
     /* top: 0; */
     width: 100%;
+    padding: 0.5em 0em;
     background-color: #f4f2f2;
     justify-content: space-between;
     /* box-shadow: 0px 1px 10px #999; */
     align-items: center;
     z-index: 1;
+}
+
+#nav-button {
+    color: #7C818A;
+    width: fit-content;
 }
 
 .scroll {
@@ -73,8 +86,14 @@ p {
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-end;
     margin-right: 45px;
+}
+
+.nav-items-mobile {
+    flex-direction: column;
+    width: 100%;
 }
 
 .nav-link:hover {
@@ -96,6 +115,7 @@ p {
 .nav-link {
     text-decoration: none;
     margin-left: 40px;
+    font-weight: bold;
     color: #2f2d2e;
 }
 
@@ -164,6 +184,9 @@ p {
 
 }
 
+.incubator h1 {
+    color: rgb(102, 191, 254);
+}
 
 .incubatorcontent {
     align-items: center;
@@ -241,7 +264,8 @@ p {
 }
 
 .button-group ul {
-    margin: 15px;
+    margin: 15px;    
+    width: 100%;
 }
 
 .button-group ul li {
@@ -249,17 +273,19 @@ p {
     display: inline-block;
 }
 
+
 .button-group ul li a {
     padding: 5px;
+    width: 3rem;
 }
 
 .button-group ul li a i {
-    font-size: 2rem;
-    color: #f22c50;
-    border: 3px solid #f22c50;
-    border-radius: 50%;
-    padding: 0.25em;
-    transition: all 0.2s ease-in-out;
+	font-size: 2rem;
+	color: #f22c50;
+	border: 3px solid #f22c50;
+	border-radius: 100%;
+	padding: 0.25em;
+	transition: all 0.2s ease-in-out;
 }
 
 .button-group ul li a i:hover {
@@ -401,7 +427,7 @@ p {
 }
 
 .spring2021 .cards h3 {
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Michroma', sans-serif;
     font-size: 2rem;
     color: #3BD902;
 }
