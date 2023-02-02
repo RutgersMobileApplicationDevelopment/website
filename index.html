@@ -16,12 +16,13 @@
   <script src="https://kit.fontawesome.com/09e5d19d1f.js" crossorigin="anonymous"></script>
   <script defer src="./public/js/navbar.js"></script>
 </head>
+
 <body>
   <nav id="navbar" class="navbar animation-element fade-in-bottom trigger">
     <a href="">
-      <img class="nav-logo" id="nav-logo" width="256px" height="130" src="./public/img/logo.svg"/>
+      <img class="nav-logo" id="nav-logo" width="256px" height="130" src="./public/img/logo.svg" />
     </a>
-    
+
     <button class="hamburger hamburger--spin" type="button" id="nav-button">
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
@@ -37,9 +38,9 @@
       <li>
         <a href="#incubator" id="incubatornav" class="nav-link trigger">Incubator</a>
       </li>
-      <li>
+      <!-- <li>
         <a href="#howitsbuilt" id="hibnav" class="nav-link trigger">Alumni Speaks</a>
-      </li>
+      </li> -->
       <!-- <li>
         <a href="#spring2021" id="spring2021nav" class="nav-link">Spring 2021</a>
       </li> -->
@@ -47,20 +48,12 @@
   </nav>
   <div id="about" class="about">
     <div class="content">
-      <h1 class="heythere animation-element fade-in-bottom trigger"><b>Hey There!</b></h1>
-      <p class="animation-element fade-in-bottom trigger">
-        We're the <b><span style="color:#F22C50">Rutgers Mobile App Development Club</span>!</b> We are a
-        student-led Computer Science club invested in teaching the Rutgers
-        community about Mobile App Development. We teach incoming students the
-        fundamentals of mobile app development in a program called
-        the <b>Accelerator</b>. Mobile Apps are an intersection between the
-        industry and the classroom, and the Accelerator was designed with that
-        belief in mind. We also motivate students to take actionable steps
-        towards their career goals through
-        <b>talks, competitions, and networking events</b>. RUMAD is an
-        <b>innovative</b> and <b>creative</b> hub for Rutgers students to
-        build the apps of their <b>dreams</b> and lifelong
-        <b>relationships</b>.
+      <h1 class="heythere animation-element fade-in-bottom trigger" style="text-align:center"><span
+          style="color:#7C818A">WE ARE</span><br>RUTGERS UNIVERSITY
+        MOBILE APP DEVELOPMENT</h1>
+      <p class="animation-element fade-in-bottom trigger text-center">
+        RUMAD is a student-led tech club dedicated to educating the Rutgers community on how to make their innovative
+        ideas to life with mobile app development.
       </p>
       <br />
       <div style="text-align: center; ">
@@ -68,7 +61,7 @@
       </div>
       <div class="button-group">
         <a href="https://docs.google.com/forms/u/2/d/e/1FAIpQLSdPSTpANF8cWCaRtA18RpVA3Lt-T62i-6ankKLKXrT0IuNbEg/viewform?usp=send_form"
-          target="_blank" class="button">General Interest Form</a>
+          target="_blank" class="button">Spring 2023 General Interest Form</a>
         <ul>
           <li>
             <a href="https://www.facebook.com/rumad.club/" target="_blank">
@@ -109,18 +102,18 @@
       <h1 class="animation-element fade-in-bottom">The Accelerator</h1>
       <div class="acceleratorcontent">
         <div>
-          <img src="./public/img/lightbulb-phone.png" class="phone" />
+          <img src="./public/img/lightbulb-phone1.svg" class="phone" style="color:#7C818A" />
         </div>
         <div>
           <p class="acceleratortext">
             The goal of the Accelerator is to take students from knowing nothing about app development to a level where
-            they can build and ship their own apps. They will pick a track from <b style="color: black">iOS, Android,
-              or Backend</b> development to learn about.
+            they can build and ship their own apps. They will pick a track from iOS, Android,
+            or Backend development to learn about.
             <br />
             <br />
             We will also provide every mentee in the Accelerator program with close mentorship from an experienced
             mentor. They will receive career and academic guidance to help ensure they are successful in their journey
-            at <b style="color: #f22c50;">Rutgers</b> and beyond.
+            at Rutgers and beyond.
             Applications are released every Fall semester.
           </p>
         </div>
@@ -132,7 +125,7 @@
       <h1 class="animation-element fade-in-bottom">The Incubator</h1>
       <div class="column acceleratorcontent animation-element fade-in-bottom">
         <div>
-          <img src="./public/img/diagram-phone.png" class="phone" />
+          <img src="./public/img/diagram-phone1.svg" class="phone" style="color:#7C818A" />
         </div>
         <div>
           <p>
@@ -148,7 +141,7 @@
       </div>
     </div>
 
-    <div id="howitsbuilt" class="hibcontent contentspacing animation-element fade-in-bottom">
+    <!-- <div id="howitsbuilt" class="hibcontent contentspacing animation-element fade-in-bottom">
       <div class="hibtext">
         <h1>Alumni Speaks</h1>
         <p>
@@ -165,7 +158,7 @@
         <div class="icon3"></div>
         <div class="icon4"></div>
       </div>
-    </div>
+    </div> -->
 
     <!-- <div class="hibVideos">
       <div class="capTalk">
@@ -180,8 +173,8 @@
 
     </div> -->
 
-    <br/>
-    <br/>
+    <br />
+    <br />
 
     <!-- <div class="contentspacing">
       <h1 class="animation-element fade-in-bottom">Newletter</h1>
@@ -260,18 +253,18 @@
 
 
     function scrollFunction() {
-      if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25 || window.innerWidth <= 1024){
-          document.getElementById("navbar").classList.toggle("navbar-solid", true)
-        } else {
-          document.getElementById("navbar").classList.toggle("navbar-solid", false)
-        }
+      if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25 || window.innerWidth <= 1024) {
+        document.getElementById("navbar").classList.toggle("navbar-solid", true)
+      } else {
+        document.getElementById("navbar").classList.toggle("navbar-solid", false)
+      }
     }
 
     function changeNavColor() {
       $(function () {
         var accpos = document.getElementById("accelerator").offsetTop - 100;
         var incpos = document.getElementById("incubator").offsetTop - 100;
-        var hibpos = document.getElementById("howitsbuilt").offsetTop - 100;
+        // var hibpos = document.getElementById("howitsbuilt").offsetTop - 100;
         // var spring2021pos = document.getElementById("spring2021").offsetTop - 100;
 
         var $window = $(window);
@@ -283,32 +276,33 @@
 
         // } else 
 
-        if ($window.scrollTop() >= hibpos) {
-          $("#aboutnav").css("color", "#2f2d2e");
-          $("#acceleratornav").css("color", "#2f2d2e");
-          $("#incubatornav").css("color", "#2f2d2e");
-          $("#hibnav").css("color", "#22DCBA");
-          $("#spring2021nav").css("color", "#2f2d2e");
+        // if ($window.scrollTop() >= hibpos) {
+        //   $("#aboutnav").css("color", "#2f2d2e");
+        //   $("#acceleratornav").css("color", "#2f2d2e");
+        //   $("#incubatornav").css("color", "#2f2d2e");
+        //   // $("#hibnav").css("color", "#22DCBA");
+        //   // $("#spring2021nav").css("color", "#2f2d2e");
 
-        } else if ($window.scrollTop() >= incpos) {
+        // } else 
+        if ($window.scrollTop() >= incpos) {
           $("#aboutnav").css("color", "#2f2d2e");
           $("#acceleratornav").css("color", "#2f2d2e");
-          $("#incubatornav").css("color", "#66bffe");
-          $("#hibnav").css("color", "#2f2d2e");
-          $("#spring2021nav").css("color", "#2f2d2e");
+          $("#incubatornav").css("color", "#f22c50");
+          // $("#hibnav").css("color", "#2f2d2e");
+          // $("#spring2021nav").css("color", "#2f2d2e");
 
         } else if ($window.scrollTop() >= accpos) {
           $("#aboutnav").css("color", "#2f2d2e");
-          $("#acceleratornav").css("color", "#ffae42");
+          $("#acceleratornav").css("color", "#f22c50");
           $("#incubatornav").css("color", "#2f2d2e");
-          $("#hibnav").css("color", "#2f2d2e");
+          // $("#hibnav").css("color", "#2f2d2e");
           $("#spring2021nav").css("color", "#2f2d2e");
         } else {
           $("#aboutnav").css("color", "#f22c50");
           $("#acceleratornav").css("color", "#2f2d2e");
           $("#incubatornav").css("color", "#2f2d2e");
-          $("#hibnav").css("color", "#2f2d2e");
-          $("#spring2021nav").css("color", "#2f2d2e");
+          // $("#hibnav").css("color", "#2f2d2e");
+          // $("#spring2021nav").css("color", "#2f2d2e");
         }
 
       })

@@ -19,10 +19,16 @@ body {
     padding-bottom: 0.5em;
 }
 
+.text-center {
+    text-align: center;
+}
+
 h1 { /* for How It's Built, Accelerator, Inccubator, Spring 2021 */
     font-weight: 500;
     font-size: 4rem;
     margin-bottom: 20px;
+    font-family: 'Michroma', sans-serif;
+    color: #7C818A;
     /* line-height: 70px; */
 
 }
@@ -31,8 +37,8 @@ p {
     font-family: 'ABeeZee', sans-serif;
     font-weight: 300;
     font-size: 1.65rem;
-    color: #7C818A;
     line-height: 3.5rem;
+    color: #7C818A;
 }
 
 .phone {
@@ -100,13 +106,13 @@ p {
     transform: scale(2);
 }
 
-#acceleratornav:hover {
+/* #acceleratornav:hover {
     color: #ffae42;
 }
 
 #hibnav:hover {
     color: #22DCBA;
-}
+} */
 
 #springnav:hover {
     color: #3BD902;
@@ -171,9 +177,9 @@ p {
     /* height: 100vh; */
 }
 
-.accelerator h1 {
+/* .accelerator h1 {
     color: #ffae42;
-}
+} */
 
 .acceleratorcontent {
     align-items: center;
@@ -184,9 +190,9 @@ p {
 
 }
 
-.incubator h1 {
+/* .incubator h1 {
     color: rgb(102, 191, 254);
-}
+} */
 
 .incubatorcontent {
     align-items: center;
@@ -260,6 +266,9 @@ p {
 }
 
 .button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -281,8 +290,8 @@ p {
 
 .button-group ul li a i {
 	font-size: 2rem;
-	color: #f22c50;
-	border: 3px solid #f22c50;
+	color: #000;
+	border: 3px solid #000;
 	border-radius: 100%;
 	padding: 0.25em;
 	transition: all 0.2s ease-in-out;
@@ -599,6 +608,10 @@ i:hover {
 
 }
 
+
+/* img {
+    filter: grayscale(100%)
+} */
 
 /* Animations */
 .fade-in-bottom {
